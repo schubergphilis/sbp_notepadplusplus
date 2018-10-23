@@ -4,7 +4,7 @@ maintainer_email  'swesselsbeljaars@schubergphilis.com'
 license           'Apache-2.0'
 description       'Installs/Configures Notepad++'
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version           '1.0.0'
+version           '1.1.0'
 
 chef_version      '>= 12.4' if respond_to?(:chef_version)
 
