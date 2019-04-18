@@ -2,7 +2,7 @@
 # Cookbook Name:: sbp_notepadplusplus
 # Attributes:: default
 #
-# Copyright 2017, Schuberg Philis B.V.
+# Copyright 2019, Schuberg Philis B.V.
 #
 #
 if platform?('windows')
