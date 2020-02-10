@@ -2,7 +2,7 @@
 # Cookbook Name:: sbp_notepadplusplus
 # Attributes:: default
 #
-# Copyright 2017, Schuberg Philis B.V.
+# Copyright 2020, Schuberg Philis B.V.
 #
 #
 if platform?('windows')
@@ -11,6 +11,7 @@ if platform?('windows')
     checksum node['notepadplusplus']['checksum']
     installer_type :custom
     options '/S'
+    version node['notepadplusplus']['version']
     action :install
   end
 else
