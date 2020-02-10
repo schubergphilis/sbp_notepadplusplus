@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: sbp_notepadplusplus
+# Cookbook:: sbp_notepadplusplus
 # Attributes:: default
 #
-# Copyright 2020, Schuberg Philis B.V.
+# Copyright:: 2020, Schuberg Philis B.V.
 #
 #
 default['notepadplusplus']['version'] = '7.8.4'
