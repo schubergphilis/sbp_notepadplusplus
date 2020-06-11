@@ -12,9 +12,16 @@ powershell_script 'Kill running notepad++' do
 end
 
 if platform?('windows')
-  windows_package 'Notepad++ (32-bit x86)' do
+  src_filename = node['notepadplusplus']['url'].split('/')[-1]
+  src_path = "#{Chef::Config['file_cache_path']}/#{src_filename}"
+
+  remote_file src_path do
     source node['notepadplusplus']['url']
     checksum node['notepadplusplus']['checksum']
+  end
+
+  windows_package 'Notepad++ (32-bit x86)' do
+    source src_path
     installer_type :custom
     options '/S'
     version node['notepadplusplus']['version']
